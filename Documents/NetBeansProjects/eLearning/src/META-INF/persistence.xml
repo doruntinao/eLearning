@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="eLearningPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>BLL.Kursi</class>
+    <class>BLL.KursiProfesori</class>
+    <class>BLL.KursiSyllabusi</class>
+    <class>BLL.Login</class>
+    <class>BLL.Materiali</class>
+    <class>BLL.MaterialiKursi</class>
+    <class>BLL.Profesori</class>
+    <class>BLL.Studenti</class>
+    <class>BLL.StudentiKursi</class>
+    <class>BLL.Syllabusi</class>
+    <class>BLL.Tools</class>
+    <class>BLL.Vleresimi</class>
+    <class>BLL.Personi</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=eLearning"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="sa"/>
+    </properties>
+  </persistence-unit>
+</persistence>
