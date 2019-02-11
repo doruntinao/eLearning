@@ -12,6 +12,7 @@ import java.util.List;
  *
  * @author Doruntina
  */
+//Adapter Pattern
 public class KursiProfesoriRepository extends EntMngClass implements KursiProfesoriInterface {
 
     @Override

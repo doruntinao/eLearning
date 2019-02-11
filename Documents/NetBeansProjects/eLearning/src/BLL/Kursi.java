@@ -48,6 +48,7 @@ public class Kursi implements Serializable {
     
     public Kursi() {
     }
+    //Lazy loading design pattern
     public static synchronized Kursi getInstance() 
     { 
         if (obj==null) 
