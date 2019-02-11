@@ -248,9 +248,9 @@ public class SignUpForm extends javax.swing.JFrame {
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
         this.dispose();
     }//GEN-LAST:event_closeButtonActionPerformed
-
+//Krijimi i nje Studenti të ri
     private void SignUpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButtonActionPerformed
-
+        
         if (!firstNameTxt.getText().equals("")
                 && !lastNameTxt.getText().equals("")
                 && !emailTxt.getText().equals("")
@@ -296,7 +296,7 @@ public class SignUpForm extends javax.swing.JFrame {
     private void passwordTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordTxtActionPerformed
 
     }//GEN-LAST:event_passwordTxtActionPerformed
-
+//Hapja e login form
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         SignUpForm sf = new SignUpForm();
         sf.setVisible(false);

@@ -169,7 +169,7 @@ public class LoginForm extends javax.swing.JFrame {
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
         this.dispose();
     }//GEN-LAST:event_closeButtonActionPerformed
-
+//Verifikimi per email dhe password
     private void LoginBttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBttnActionPerformed
 
         if (emailTxt.getText().equals("") && passwordTxt.getText().equals("")) {
@@ -202,7 +202,7 @@ public class LoginForm extends javax.swing.JFrame {
     private void passwordTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordTxtActionPerformed
 
     }//GEN-LAST:event_passwordTxtActionPerformed
-
+//Hapja e formes SignUp
     private void signupButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupButtonActionPerformed
         LoginForm lf = new LoginForm();
         lf.setVisible(false);
@@ -210,7 +210,7 @@ public class LoginForm extends javax.swing.JFrame {
         s.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_signupButtonActionPerformed
-
+//Minimizimi i formes
     private void minimizeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minimizeButtonActionPerformed
         this.setState(this.ICONIFIED);
     }//GEN-LAST:event_minimizeButtonActionPerformed

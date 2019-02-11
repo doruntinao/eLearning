@@ -78,7 +78,7 @@ public class Main extends javax.swing.JFrame {
         coursePanel.setVisible(false);
         courseLecturePanel.setVisible(false);
     }
-
+//I tregon kurse që studenti mund të ketë interesim në to
     public void tableLoadRC() {
         try {
             List<Kursi> lista = kir.findAll();
@@ -98,7 +98,7 @@ public class Main extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, ve.getMessage());
         }
     }
-
+// I tregon të gjitha kurset
     public void tableLoadC() {
         try {
             List<StudentiKursi> lista = skir.findAll();
@@ -121,7 +121,7 @@ public class Main extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, ve.getMessage());
         }
     }
-
+//I tregon të Kurset të cilet Studenti është i regjistruar
     public void tableLoadYC() {
         try {
             List<StudentiKursi> lista = skir.findAll();
@@ -141,7 +141,7 @@ public class Main extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, ve.getMessage());
         }
     }
-
+//Tregon se cili Kurs është selektuar në tabele
     private void tabelaSelectedIndexChange() {
         tableLoadC();
         final ListSelectionModel rowSM = courseTable.getSelectionModel();
@@ -161,7 +161,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
     }
-
+//Vendosja e emrave të profesoreve në combobox pasi të selektohet lënda
     public void populateProfesoriComboBox(Kursi k) {
         try {
             List<KursiProfesori> listakp = kpir.findAll();
@@ -710,7 +710,7 @@ public class Main extends javax.swing.JFrame {
     private void messagesBttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_messagesBttnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_messagesBttnActionPerformed
-
+//Rikthehet tek forma e login
     private void logoutBttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutBttnActionPerformed
         Studenti s = new Studenti();
         Main m = new Main(s);
@@ -723,7 +723,7 @@ public class Main extends javax.swing.JFrame {
     private void minimizeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minimizeButtonActionPerformed
         this.setState(this.ICONIFIED);
     }//GEN-LAST:event_minimizeButtonActionPerformed
-
+//Bën enroll Studentin në lënden që e ka selektuar
     private void enrollButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enrollButtonActionPerformed
         int row = courseTable.getSelectedRow();
         if (row != -1 && tipiCB.getSelectedIndex() != 0) {
@@ -751,7 +751,7 @@ public class Main extends javax.swing.JFrame {
     private void tipiCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipiCBActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tipiCBActionPerformed
-
+//Tregon se cilin kurs e ka startuar studenti
     private void startCourseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startCourseButtonActionPerformed
         courseLecturePanel.setVisible(true);
         coursePanel.setVisible(false);
@@ -764,7 +764,7 @@ public class Main extends javax.swing.JFrame {
             courseName.setText(k.getEmriKursit());
         }
     }//GEN-LAST:event_startCourseButtonActionPerformed
-
+//Hapja e ligjeratave në pdf të landes se selektuar
     private void lesson1ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lesson1ButtonActionPerformed
         MaterialiKursi mk = new MaterialiKursi();
         Materiali m1 = new Materiali();
@@ -784,7 +784,7 @@ public class Main extends javax.swing.JFrame {
                             output.write(buffer);
                         }
                         if (m1.getEmri().equals("Ligjerata 1.pdf")) {
-                            File file = new File("/Users/Gentiana/Documents/NetBeansProjects/eLearning/" + m1.getEmri());
+                            File file = new File("/Users/User/Documents/NetBeansProjects/eLearning/" + m1.getEmri());
                             Desktop desktop = Desktop.getDesktop();
                             desktop.open(file);
                         }
