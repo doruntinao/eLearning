@@ -6,3 +6,5 @@ eLearning - Course Tracking Module
 ![login](https://user-images.githubusercontent.com/34951430/53378591-6eceba00-3966-11e9-838c-cc58e002e3e8.png)
 ## Home
 ![home](https://user-images.githubusercontent.com/34951430/53378719-fae0e180-3966-11e9-8e24-64f1e302b0cb.png)
+## Lessons
+![lessons](https://user-images.githubusercontent.com/34951430/53379129-958df000-3968-11e9-829c-2964a3ec6da1.png)
